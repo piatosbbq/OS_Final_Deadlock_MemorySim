@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import memory_allocation as ma
 import bankers_algorithm as ba
 
-# Input data
+# input data requirements
 memory_blocks = [100, 500, 200, 300, 600]
 processes = [212, 417, 112, 426]
 
@@ -15,23 +15,23 @@ print("First Fit Allocation:", ff)
 print("Best Fit Allocation:", bf)
 print("Worst Fit Allocation:", wf)
 
+# Plot results
 labels = ['P1', 'P2', 'P3', 'P4']
-x = range(len(processes))
+fig, ax = plt.subplots()
 bar_width = 0.2
+x = range(len(processes))
 
-# Chart of the results
-fig1, ax1 = plt.subplots()
-ax1.bar([p - bar_width for p in x], ff, width=bar_width, label='First Fit', color='skyblue')
-ax1.bar(x, bf, width=bar_width, label='Best Fit', color='lightgreen')
-ax1.bar([p + bar_width for p in x], wf, width=bar_width, label='Worst Fit', color='salmon')
+ax.bar([p - bar_width for p in x], ff, width=bar_width, label='First Fit')
+ax.bar(x, bf, width=bar_width, label='Best Fit')
+ax.bar([p + bar_width for p in x], wf, width=bar_width, label='Worst Fit')
 
-ax1.set_xlabel('Processes')
-ax1.set_ylabel('Block Index Allocated')
-ax1.set_title('Memory Allocation Comparison (Bar Chart)')
-ax1.set_xticks(x)
-ax1.set_xticklabels(labels)
-ax1.legend()
-plt.tight_layout()
+ax.set_xlabel('Processes')
+ax.set_ylabel('Block Index Allocated')
+ax.set_title('Memory Allocation Comparison')
+ax.set_xticks(x)
+ax.set_xticklabels(labels)
+ax.legend()
+plt.savefig("process_allocation_chart.png")
 plt.show()
 
 # Banker's Algorithm Test
@@ -59,4 +59,5 @@ if safe:
     ax3.grid(True, axis='x', linestyle='--', alpha=0.5)
 
     plt.tight_layout()
+    plt.savefig("bankers_algo_sequence_chart.png")
     plt.show()
