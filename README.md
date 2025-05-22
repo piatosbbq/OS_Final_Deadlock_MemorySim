@@ -16,8 +16,7 @@ AZARCON, Christian Jull G.
   
 DIANO, Maxzine Arly V.
 - Researcher
-- Documentation
-- Report Writing
+- Documentation & Report Writing
 - Video Editing 
 - Final Polishing
   
@@ -35,8 +34,7 @@ RAFER, Britney P.
   
 SOTELO, Shantelle C.
 - Researcher
-- Documentation
-- Report Writing
+- Documentation & Report Writing
 - Video Editing 
 - Final Polishing
 
