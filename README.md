@@ -8,6 +8,7 @@ This study focuses on understanding how deadlocks happen in operating systems an
 
 
 MEMBERS AND ROLES:
+
 AZARCON, Christian Jull G.
 - Researcher
 - Programming & Algorithm Implementation 
